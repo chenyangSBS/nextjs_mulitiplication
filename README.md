@@ -1,8 +1,18 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Recommended Environment
+Node v20.18.0；
+npm 10.8.2
+
 ## Getting Started
 
-First, run the development server:
+First, install third-party libraries:
+```bash
+npm install
+```
+
+
+Second, run the development server:
 
 ```bash
 npm run dev
@@ -14,9 +24,16 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Precondition
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Run your Spring Boot Application on port 8091.
+
+Open [http://localhost:3000/home](http://localhost:3000/home) with your browser to see the multiplication example.
+
+Open [http://localhost:3000/video](http://localhost:3000/video) with your browser to see the video example.
+
+
+You can start editing the page by modifying `app/pages/home.tsx` and `app/pages/video.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
